@@ -90,19 +90,6 @@ const Index = () => {
           Silakan tunggu informasi selanjutnya atau hubungi tim kami untuk klaim hadiah!
         </p>
 
-        {/* Buttons */}
-        <div
-          className="mt-10 flex flex-col sm:flex-row gap-4 animate-slide-up"
-          style={{ animationDelay: "0.9s", opacity: 0, animationFillMode: "forwards" }}
-        >
-          <button className="px-8 py-4 bg-primary text-primary-foreground font-bold text-lg rounded-full animate-pulse-glow hover:scale-105 transition-transform shadow-lg">
-            🎁 Klaim Hadiah
-          </button>
-          <button className="px-8 py-4 bg-card text-foreground font-semibold text-lg rounded-full border-2 border-primary hover:bg-primary hover:text-primary-foreground transition-all">
-            ← Kembali ke Halaman Utama
-          </button>
-        </div>
-
         {/* Footer note */}
         <p
           className="mt-16 text-sm text-muted-foreground animate-slide-up"
