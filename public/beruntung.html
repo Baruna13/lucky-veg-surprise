@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANDA BERUNTUNG!</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Confetti -->
+  <div class="confetti-container" id="confetti"></div>
+
+  <!-- Sparkles -->
+  <svg class="sparkle sparkle-1" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0L14.59 8.41L23 12L14.59 15.59L12 24L9.41 15.59L1 12L9.41 8.41Z"/></svg>
+  <svg class="sparkle sparkle-2" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0L14.59 8.41L23 12L14.59 15.59L12 24L9.41 15.59L1 12L9.41 8.41Z"/></svg>
+  <svg class="sparkle sparkle-3" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0L14.59 8.41L23 12L14.59 15.59L12 24L9.41 15.59L1 12L9.41 8.41Z"/></svg>
+  <svg class="sparkle sparkle-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0L14.59 8.41L23 12L14.59 15.59L12 24L9.41 15.59L1 12L9.41 8.41Z"/></svg>
+
+  <div class="main-content">
+    <!-- Sayuran -->
+    <div class="veggies">
+      <img src="images/carrot-happy.png" alt="Wortel ceria" class="veggie veggie-small float-anim bounce-in" style="animation-delay: 0.2s">
+      <img src="images/broccoli-happy.png" alt="Brokoli antusias" class="veggie veggie-large float-reverse-anim bounce-in" style="animation-delay: 0.4s">
+      <img src="images/tomato-happy.png" alt="Tomat gembira" class="veggie veggie-small float-anim bounce-in" style="animation-delay: 0.6s">
+    </div>
+
+    <!-- Judul -->
+    <h1 class="title slide-up" style="animation-delay: 0.3s">ANDA BERUNTUNG!</h1>
+
+    <!-- Badge -->
+    <div class="badge slide-up" style="animation-delay: 0.5s">🎉 Selamat! 🎉</div>
+
+    <!-- Deskripsi -->
+    <p class="description slide-up" style="animation-delay: 0.7s">
+      Kamu mendapatkan kesempatan spesial dari produk sayuran segar kami.
+      Silakan tunggu informasi selanjutnya atau hubungi tim kami untuk klaim hadiah!
+    </p>
+
+    <!-- Footer -->
+    <p class="footer slide-up" style="animation-delay: 0.9s">
+      © 2026 Sayuran Segar — Keberuntunganmu dimulai dari sini 🌿
+    </p>
+  </div>
+
+  <script>
+    // Generate confetti
+    const container = document.getElementById('confetti');
+    const colors = ['#51cf66', '#ff922b', '#51cf66aa', '#ff922baa'];
+    for (let i = 0; i < 20; i++) {
+      const dot = document.createElement('div');
+      dot.className = 'confetti-dot';
+      dot.style.left = Math.random() * 100 + '%';
+      dot.style.backgroundColor = colors[i % colors.length];
+      dot.style.animationDelay = (Math.random() * 4) + 's';
+      dot.style.animationDuration = (3 + Math.random() * 3) + 's';
+      container.appendChild(dot);
+    }
+  </script>
+</body>
+</html>
